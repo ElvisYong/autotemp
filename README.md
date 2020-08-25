@@ -42,10 +42,14 @@ Install required dependencies and save to requirements.txt
 
 ## Deploy Serverless
 
-Deploy the fuction
+Deploy the function
 ```
 $sls deploy
 ```
 
-More info: https://www.serverless.com/blog/flask-python-rest-api-serverless-lambda-dynamodb
+Test invoke the function
+```
+$sls invoke -f autotemp
+```
 
+More info: https://www.serverless.com/blog/flask-python-rest-api-serverless-lambda-dynamodb
