@@ -36,7 +36,7 @@ $source venv/bin/activate
 
 Install required dependencies and save to requirements.txt
 ```
-(venv) $pip install flask
+(venv) $pip install requests
 (venv) $pip freeze > requirements.txt
 ```
 
