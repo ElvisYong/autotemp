@@ -1,0 +1,20 @@
+service: autotemp
+
+provider:
+  name: aws
+  runtime: python3.8
+  region: ap-southeast-1
+  timeout: 30
+
+functions:
+  cron:
+    handler: handler.autotemp
+    events:
+    # Invoke Lambda function every morning
+      - schedule:
+          rate: cron(0 0,8 * * ? *)
+  autotemp:
+    handler: handler.autotemp
+
+plugins:
+  - serverless-python-requirements
