@@ -4,7 +4,7 @@ import random
 from datetime import date, datetime, timedelta
 
 def autotemp(event, context):
-    API_ENDPOINT = "https://temptaking.ado.sg/group/MemberSubmitTemperature"
+    API_ENDPOINT = "APIENDPOINT"
     # too lazy to keep this somewhere
     a = 35.8
     b = 36.9
